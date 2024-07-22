@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper" id="formWrapper">
+            <!-- Login Form -->
+            <div class="form-container login-form active">
+                <h2>Login</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="text" id="loginUsername" placeholder=" " required>
+                        <label for="loginUsername">Username</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="loginPassword" placeholder=" " required>
+                        <label for="loginPassword">Password</label>
+                    </div>
+                    <button type="submit" id="btn">Login</button>
+                    <p>Don't have an account? <a href="#" id="toggleForm">Register</a></p>
+                </form>
+            </div>
+            
+            <!-- Register Form -->
+            <div class="form-container register-form">
+                <h2>Register</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="text" id="registerUsername" placeholder=" " required>
+                        <label for="registerUsername">Username</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="registerEmail" placeholder=" " required>
+                        <label for="registerEmail">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="registerPassword" placeholder=" " required>
+                        <label for="registerPassword">Password</label>
+                    </div>
+                    <button type="submit" id="btn">Register</button>
+                    <p>Already have an account? <a href="#" id="toggleForm">Login</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
